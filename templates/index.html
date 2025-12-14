@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>Road Sign Detector</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <br><br>
+    <input type="submit" value="Predict">
+</form>
+
+{% if label %}
+<h3>Prediction: {{ label }}</h3>
+{% endif %}
+
+</center>
+</body>
+</html>
